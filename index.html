@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <title>Movies</title>
+</head>
+
+<body>
+  <section class="movies">
+    <div class="container">
+      <h1 class="movies__title text-center">Movies catalog</h1>
+      <div class="movies__box row">
+
+        <div class="movies__info col-4">
+          <form action="" class="form">
+
+            <label for="MovieName" class="form-label"></label>
+            <input type="text" class="form-control" id="MovieName" placeholder="">
+
+            <label for="DataList" class="form-label"></label>
+            <input class="form-control mb-4" list="datalistOptions" id="DataList" placeholder="">
+            <datalist id="datalistOptions">
+              <option value="1">
+              <option value="2">
+              <option value="3">
+              <option value="4">
+              <option value="5">
+            </datalist>
+
+            <select class="form-select mb-4" aria-label="Default select example">
+              <option selected></option>
+              <option value="1">First</option>
+              <option value="2">Second</option>
+              <option value="3">Third</option>
+              <option value="3">Fourth</option>
+              <option value="3">Fifth</option>
+              <option value="3">All</option>
+            </select>
+
+            <select class="form-select mb-4" aria-label="Rating (high to low)">
+              <option selected>Rating (high to low)</option>
+              <option value="1">High</option>
+              <option value="2">Low</option>
+            </select>
+
+            <button class="btn btn-primary w-100 mb-4" type="submit">Search</button>
+          </form>
+
+          <h2 class="movies__subtitle mb-3">Bookmarked movies</h2>
+
+          <ul class="list-group">
+            <li class="list-group-item">
+              <h3>Avengers: Infinity war</h3><button type="Search" class="btn btn-danger">Danger</button>
+            </li>
+            <li class="list-group-item">
+              <h3>The Avengers</h3><button type="Search" class="btn btn-danger">Danger</button>
+            </li>
+            <li class="list-group-item">
+              <h3>12 Years a Slave</h3><button type="Search" class="btn btn-danger">Danger</button>
+            </li>
+          </ul>
+
+        </div>
+
+
+        <div class="col-8">
+          <h2 class="mt-3">Search resaults: 39</h2>
+
+          <div class="alert alert-success" role="alert">
+            Use the form on the left to search for a movie
+          </div>
+
+          <div class="row">
+
+            <div class="col-6">
+              <div class="movies__subbox mb-4 border rounded"><img src="./images/avengers.jpg" alt="Avengers movie's actors image" width="355"
+                  height="200" class="movies__img mb-3">
+                <div class="movies__subinfo mb-4 ps-3">
+                  <h3 class="">Avengers: Infinity war</h3>
+                  <div class="movies__timetable d-flex"><img src="./images/date.png" alt="timetable icon" width="20" height="20"
+                      class="movies__img me-2">
+                    <p>2018</p>
+                  </div>
+                  <div class="movies__timetable d-flex"><img src="./images/star.png" alt="yellow star" width="20" height="20"
+                      class="movies__img me-2">
+                    <p>8.7</p>
+                  </div>
+                  <button type="button" class="btn  btn-outline-primary ">Watch trailer</button>
+                  <button type="button" class="btn btn-outline-info">More info</button>
+                  <button type="button" class="btn btn-outline-success">Bookmark</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="movies__subbox mb-4 border rounded"><img src="./images/the-avengers.jpg" alt="The robert image which color is red" width="355"
+                  height="200" class="movies__img mb-3">
+                <div class="movies__subinfo mb-4 ps-3">
+                  <h3>The Avengers</h3>
+                  <div class="movies__timetable d-flex"><img src="./images/date.png" alt="timetable icon" width="20" height="20"
+                      class="movies__img me-2">
+                    <p>2012</p>
+                  </div>
+                  <div class="movies__timetable d-flex"><img src="./images/star.png" alt="yellow star" width="20" height="20"
+                      class="movies__img me-2">
+                    <p>8.1</p>
+                  </div>
+                  <button type="button" class="btn  btn-outline-primary ">Watch trailer</button>
+                  <button type="button" class="btn btn-outline-info">More info</button>
+                  <button type="button" class="btn btn-outline-success">Bookmark</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <nav aria-label="..." class="nav d-block mt-4">
+            <ul class="pagination justify-content-center ">
+              <li class="page-item active" aria-current="page">
+                <span class="page-link">1</span>
+              </li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">4</a></li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+</body>
+
+</html>
