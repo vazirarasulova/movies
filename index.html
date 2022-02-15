@@ -14,39 +14,44 @@
   <section class="movies">
     <div class="container">
       <h1 class="movies__title text-center">Movies catalog</h1>
+
       <div class="movies__box row">
-
         <div class="movies__info col-4">
-          <form action="" class="form">
+          <form action="https://echo.htmlacademy.ru/" class="form" method="post">
 
-            <label for="MovieName" class="form-label"></label>
-            <input type="text" class="form-control" id="MovieName" placeholder="">
+            <label class="form-label w-100 mb-3">
+            <input type="text" class="form-control" name="movie name"  placeholder="write movie name">
+          </label>
 
-            <label for="DataList" class="form-label"></label>
-            <input class="form-control mb-4" list="datalistOptions" id="DataList" placeholder="">
+            <label  class="form-label w-100 mb-3">
+            <input class="form-control" list="datalistOptions" name="score" placeholder="score">
             <datalist id="datalistOptions">
-              <option value="1">
-              <option value="2">
-              <option value="3">
-              <option value="4">
-              <option value="5">
+              <option value="1">1 </option>
+              <option value="2">2 </option>
+              <option value="3">3 </option>
+              <option value="4">4 </option>
+              <option value="5">5 </option>
             </datalist>
+          </label>
 
-            <select class="form-select mb-4" aria-label="Default select example">
-              <option selected></option>
+          <label class="form-label w-100 mb-3"> 
+            <select class="form-select" name="all">
+              <option  value="All" selected>All</option>
               <option value="1">First</option>
               <option value="2">Second</option>
               <option value="3">Third</option>
               <option value="3">Fourth</option>
               <option value="3">Fifth</option>
-              <option value="3">All</option>
             </select>
+          </label>
 
-            <select class="form-select mb-4" aria-label="Rating (high to low)">
+          <label class="form-label w-100 mb-3"> 
+            <select class="form-select">
               <option selected>Rating (high to low)</option>
-              <option value="1">High</option>
-              <option value="2">Low</option>
+              <option value="rate">High</option>
+              <option value="rate">Low</option>
             </select>
+          </label>
 
             <button class="btn btn-primary w-100 mb-4" type="submit">Search</button>
           </form>
@@ -69,7 +74,7 @@
 
 
         <div class="col-8">
-          <h2 class="mt-3">Search resaults: 39</h2>
+          <h2 class="movies__subtitle">Search resaults: 39</h2>
 
           <div class="alert alert-success" role="alert">
             Use the form on the left to search for a movie
