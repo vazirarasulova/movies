@@ -24,15 +24,9 @@
             </label>
 
             <label class="form-label w-100 mb-3">
-              <input class="form-control" list="datalistOptions" name="score" placeholder="score">
-              <datalist id="datalistOptions">
-                <option value="1">1 </option>
-                <option value="2">2 </option>
-                <option value="3">3 </option>
-                <option value="4">4 </option>
-                <option value="5">5 </option>
-              </datalist>
+              <input type="text" class="form-control" name="score" placeholder="score">
             </label>
+
 
             <label class="form-label w-100 mb-3">
               <select class="form-select" name="all">
@@ -44,10 +38,11 @@
                 <option value="3">Fifth</option>
               </select>
             </label>
+            </label>
 
             <label class="form-label w-100 mb-3">
               <select class="form-select">
-                <option selected>Rating (high to low)</option>
+                <option selected >Rating (high to low)</option>
                 <option value="rate">High</option>
                 <option value="rate">Low</option>
               </select>
@@ -60,10 +55,12 @@
 
           <ul class="list-group">
             <li class="list-group-item">
-              <h3>Avengers: Infinity war</h3><button type="Search" class="btn btn-danger">Danger</button>
+              <h3>Avengers: Infinity war</h3>
+              <button type="Search" class="btn btn-danger">Danger</button>
             </li>
             <li class="list-group-item">
-              <h3>The Avengers</h3><button type="Search" class="btn btn-danger">Danger</button>
+              <h3>The Avengers</h3>
+              <button type="Search" class="btn btn-danger">Danger</button>
             </li>
             <li class="list-group-item">
               <h3>12 Years a Slave</h3><button type="Search" class="btn btn-danger">Danger</button>
@@ -86,7 +83,7 @@
           <div class="row">
 
             <div class="col-6">
-              <div class="movies__subbox mb-4 border rounded">
+              <div class="movies__subbox card mb-4 border rounded">
 
                 <div id="carousel" class="carousel slide" data-bs-ride="carousel">
                   <div class="carousel-inner">
@@ -114,8 +111,8 @@
                 </div>
 
 
-                <div class="movies__subinfo mb-4 ps-3">
-                  <h3 class="">Avengers: Infinity war</h3>
+                <div class="movies__subinfo card-body mb-4 ps-3">
+                  <h3 class="card-title">Avengers: Infinity war</h3>
                   <div class="movies__timetable d-flex"><img src="./images/date.png" alt="timetable icon" width="20"
                       height="20" class="movies__img me-2">
                     <p>2018</p>
@@ -133,7 +130,7 @@
             </div>
 
             <div class="col-6">
-              <div class="movies__subbox mb-4 border rounded">
+              <div class="movies__subbox card mb-4 border rounded">
 
 
                 <div id="carousel" class="carousel slide" data-bs-ride="carousel">
@@ -161,8 +158,8 @@
                   </button>
                 </div>
 
-                <div class="movies__subinfo mb-4 ps-3">
-                  <h3>The Avengers</h3>
+                <div class="movies__subinfo card-body mb-4 ps-3">
+                  <h3 class="card-title">The Avengers</h3>
                   <div class="movies__timetable d-flex"><img src="./images/date.png" alt="timetable icon" width="20"
                       height="20" class="movies__img me-2">
                     <p>2012</p>
